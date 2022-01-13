@@ -1,0 +1,190 @@
+/* Responsive CSS */
+/* Applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .container {
+    width: 1140px;
+  }
+}
+/* Applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  /*Banner CSS */
+  .banner {
+    &__title {
+      font-size: 50px;
+    }
+    &__offer {
+      font-size: 30px;
+    }
+  }
+  /*Blog CSS */
+  .blog {
+    &__title {
+      font-size: 20px;
+    }
+  }
+  /* Footer CSS */
+  .footer {
+    &__title {
+      font-size: 22px;
+    }
+  }
+}
+/* Applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+  /*Navigation CSS */
+  .nav {
+    &__logo {
+      grid-column: span 7;
+    }
+    &__list {
+      position: absolute;
+      top: 98%;
+      left: 0;
+      width: 300px;
+      height: 100vh;
+      background: $black;
+      padding-top: 90px;
+      z-index: 5;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: start;
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+      &.active {
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+      }
+    }
+    &__item {
+      display: block;
+      text-align: center;
+      margin: 10px;
+    }
+    &__icon {
+      grid-column: span 5;
+    }
+    &__btn {
+      display: inline-block;
+    }
+  }
+  /* Product  CSS */
+  .product {
+    &__item {
+      grid-column: span 6;
+    }
+    &__image {
+      height: 360px;
+    }
+  }
+  /* Arrival  CSS */
+  .arrival {
+    &__item {
+      grid-column: span 6;
+    }
+    &__image {
+      height: 360px;
+    }
+  }
+  /* Contact CSS */
+  .contact {
+    &__box {
+      grid-column: span 12;
+    }
+    &__form {
+      padding: 20px;
+    }
+  }
+  /* Blog CSS */
+  .blog {
+    &__box {
+      grid-column: span 6;
+    }
+  }
+  /* Footer CSS */
+  .footer {
+    &__box {
+      grid-column: span 6;
+    }
+  }
+}
+/* Applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+  /* Product CSS */
+  .product {
+    &__item {
+      grid-column: span 12;
+    }
+  }
+  /* Arrival CSS */
+  .arrival {
+    &__item {
+      grid-column: span 12;
+    }
+  }
+  /* Contact CSS */
+  .contact {
+    &__box {
+      grid-column: span 12;
+    }
+  }
+  /* Blog CSS */
+  .blog {
+    &__box {
+      grid-column: span 12;
+    }
+  }
+  /* Footer CSS */
+  .footer {
+    &__box {
+      grid-column: span 12;
+    }
+  }
+}
+/* Applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .pt-60 {
+    padding-top: 40px;
+  }
+  .pb-60 {
+    padding-bottom: 40px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .banner {
+    &__title {
+      font-size: 35px;
+    }
+    &__offer {
+      font-size: 25px;
+      margin-top: 15px;
+    }
+    &__btn {
+      margin-top: 28px;
+    }
+  }
+  .about {
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .footer {
+    &__title {
+      font-size: 20px;
+    }
+  }
+}

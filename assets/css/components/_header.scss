@@ -1,0 +1,83 @@
+/* Header section CSS */
+.header-section {
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  &.active {
+    background: $black;
+  }
+}
+.nav {
+  align-items: center;
+  &__logo {
+    grid-column: span 2;
+    &--link {
+      color: $white;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &--bhoot {
+      color: $orange;
+      margin-right: 4px;
+      animation: floating 3s linear infinite;
+    }
+  }
+  &__list {
+    grid-column: span 8;
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  &__link {
+    display: block;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $white;
+    &:hover,
+    &.active {
+      color: $orange;
+    }
+  }
+  &__icon {
+    grid-column: span 2;
+    display: flex;
+    justify-content: end;
+    &--fas {
+      color: $white;
+      background: transparent;
+      display: inline-block;
+      font-size: 22px;
+      text-align: center;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        background: $orange;
+      }
+    }
+  }
+  &__btn {
+    display: none;
+  }
+}
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

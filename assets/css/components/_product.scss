@@ -1,0 +1,62 @@
+/* Product sction CSS */
+.product {
+  &__item {
+    grid-column: span 3;
+    position: relative;
+    overflow: hidden;
+    &:hover .product__icon {
+      right: 10px;
+    }
+    &:hover .product__image--img {
+      transform: scale(1.2);
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 20px;
+    right: -60px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    &--fas {
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      color: $dark;
+      background: $white;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: $white;
+        background: $orange;
+      }
+    }
+  }
+  &__image {
+    height: 330px;
+    width: 100%;
+    overflow: hidden;
+    &--img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 15px 0;
+  }
+  &__price {
+    font-size: 20px;
+    color: $white;
+    font-weight: 600;
+  }
+  &__offer {
+    color: $orange;
+    font-size: 15px;
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,25 @@
+/* Banner section CSS */
+.banner-section {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  &__title {
+    font-size: 55px;
+    text-transform: capitalize;
+  }
+  &__offer {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+  &__btn {
+    margin-top: 35px;
+  }
+}

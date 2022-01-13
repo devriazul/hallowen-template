@@ -1,0 +1,23 @@
+/* About section CSS */
+.about-section {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about {
+  &__content {
+    padding: 130px 0;
+    max-width: 500px;
+  }
+  &__title {
+    color: $orange;
+    font-size: 35px;
+    text-transform: capitalize;
+  }
+  &__text {
+    font-size: 15px;
+    color: $white;
+    padding-top: 15px;
+    line-height: 2;
+  }
+}
